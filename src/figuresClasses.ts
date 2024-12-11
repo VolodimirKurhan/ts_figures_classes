@@ -30,6 +30,9 @@ export class Triangle implements Figure {
     this.b = b;
     this.c = c;
   }
+  getArrea(): number {
+    throw new Error("Method not implemented.");
+  }
 
   getArea(): number {
     const s = (this.a + this.b + this.c) / 2;
@@ -53,6 +56,9 @@ export class Circle implements Figure {
     this.shape = 'circle';
     this.color = color;
     this.radius = radius;
+  }
+  getArrea(): number {
+    throw new Error("Method not implemented.");
   }
 
   getArea(): number {
@@ -79,6 +85,9 @@ export class Rectangle implements Figure {
     this.color = color;
     this.width = width;
     this.height = height;
+  }
+  getArrea(): number {
+    throw new Error("Method not implemented.");
   }
 
   getArea(): number {
